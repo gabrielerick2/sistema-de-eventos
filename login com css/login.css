@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  /* Ocupa toda a altura da viewport */
+}
+
+.login {
+  width: 350px;
+  margin: 2 auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  /* Centralizar conteúdo horizontalmente */
+}
+
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #d4a926;
+}
+
+img {
+  width: 232px;
+  /* Defina o tamanho desejado para o logo */
+  margin-bottom: 20px;
+  /* Adicione um espaçamento entre o logo e os campos de entrada */
+}
+
+.esqueci-senha {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.esqueci-senha a {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+
+.esqueci-senha a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 480px) {
+  .login-container {
+    width: 80%;
+  }
+
+  .login-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
